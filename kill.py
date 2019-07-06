@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import os
 import signal
 
@@ -12,7 +11,7 @@ def get_tasks():
     # get tasks
     tasks = os.popen('ps aux')
 
-    for task in tasks:  # iterate throught tasks
+    for task in tasks:
         fields = task.strip().split(' ')
         fields = filter(None, fields)
 
